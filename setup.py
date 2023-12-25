@@ -1,11 +1,16 @@
 from setuptools import find_packages, setup
+import pathlib
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+
+with open(str(pathlib.Path(__file__).parent.absolute()) + "/fib_py/version.py", "r") as fh:
+    version = fh.read().split("=")[1].replace("'", "")
+
 setup(
     name="denilson_fib_py",
-    version="0.0.3",
+    version=version,
     author="Denilson",
     author_email="denilson020898@gmail.com",
     description="Recursive fibonacci",
