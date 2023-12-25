@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="fib_py",
+    name="denilson_fib_py",
     version="0.0.2",
     author="Denilson",
     author_email="denilson020898@gmail.com",
