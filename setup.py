@@ -1,12 +1,15 @@
 from setuptools import find_packages, setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="test_fib_py",
     version="0.0.1",
     author="Denilson",
     author_email="denilson020898@gmail.com",
     description="Recursive fibonacci",
-    long_description="Basic library to calculate fibonacci bro",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/denilson020898/test-fib-py",
     install_requires=[],
