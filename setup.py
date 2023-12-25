@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="denilson_fib_py",
-    version="0.0.2",
+    version="0.0.3",
     author="Denilson",
     author_email="denilson020898@gmail.com",
     description="Recursive fibonacci",
