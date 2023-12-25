@@ -12,7 +12,10 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/denilson020898/test-fib-py",
-    install_requires=[],
+    install_requires=[
+        "PyYAML>=4.1.2",
+        "dill>=0.2.8",
+    ],
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -26,4 +29,7 @@ setup(
             'fib-number = test_fib_py.cmd.fib_numb:fib_numb',
         ],
     },
+    extras_require={
+        "server": ["Flask>1.0.0"]
+    }
 )
