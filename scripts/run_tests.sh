@@ -6,5 +6,5 @@ cd $SCRIPTPATH
 cd ..
 
 source venv/bin/activate
-export PYTHONPAY="./fib_py"
+export PYTHONPATH="./fib_py"
 python -m unittest discover

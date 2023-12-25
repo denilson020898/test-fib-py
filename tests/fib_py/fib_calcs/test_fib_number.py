@@ -7,7 +7,9 @@ class RecurringFibonacciNumber(TestCase):
         self.assertEqual(0, recurring_fibonacci_number(number=0))
 
     def test_negative(self):
-        self.assertEqual(None, recurring_fibonacci_number(number=-1))
+        with self.assertRaises(ValueError) as raised_error:
+            recurring_fibonacci_number(number=-1)
+        self.assertEqual("Fibonacci has to be equal or above zero bro", str(raised_error.exception))
 
     def test_one(self):
         self.assertEqual(1, recurring_fibonacci_number(number=1))
