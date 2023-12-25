@@ -17,7 +17,7 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Programming Language :: Python :: 3",
-        "Operating System:: OS Independent",
+        "Operating System :: OS Independent",
     ],
     python_requires=">=3",
     tests_require=["pytest"],
