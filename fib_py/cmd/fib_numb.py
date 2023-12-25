@@ -1,6 +1,6 @@
 import argparse
 
-from test_fib_py.fib_calcs.fib_number import recurring_fibonacci_number
+from fib_py.fib_calcs.fib_number import recurring_fibonacci_number
 
 def fib_numb() -> None:
     parser = argparse.ArgumentParser(
